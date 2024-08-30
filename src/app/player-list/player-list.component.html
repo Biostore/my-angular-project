@@ -1,0 +1,21 @@
+<p>player-list works!</p>
+<table class="table table-hover">
+  <thead class="table-dark">
+    <tr>
+      <th>Rank</th>
+      <th>Name</th>
+      <th>Club</th>
+      <th>Nationality</th>
+      <th>goals</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let player of playerList">
+      <td>{{ player.rank }}</td>
+      <td>{{ player.club }}</td>
+      <td>{{ player.name }}</td>
+      <td>{{ player.nationality }}</td>
+      <td>{{ player.goals }}</td>
+    </tr>
+  </tbody>
+</table>
